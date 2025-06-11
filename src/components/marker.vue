@@ -112,6 +112,8 @@ export default buildComponent({
   },
 
   afterCreate(inst) {
+    console.log('roman repo');
+
     events.forEach((event)=> {
       inst.addListener(event, (payload)=> {
         this.$emit(event, payload)
