@@ -82,7 +82,7 @@ export default buildComponent({
   mappedProps: props,
   events,
   name: 'marker',
-  ctr: () => google.maps.Marker,
+  ctr: () => google.maps.marker.AdvancedMarkerElement,
 
   inject: {
     $clusterPromise: {
